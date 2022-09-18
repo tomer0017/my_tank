@@ -1,0 +1,211 @@
+
+
+.App {
+  min-height: 1000px;
+  background-image: url('https://i.pinimg.com/originals/89/dd/d1/89ddd1736843155c89bac176fdb5dcdc.jpg');
+  background-color: #ffffff;
+  
+  /* padding: 30px; */
+  text-align: center  ;
+}
+
+.top_header{
+  background-color: #ffffff;
+  border-bottom: 10px solid #3499db;
+  height: 160px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: fixed;
+  bottom: 0;
+  right:0;
+  height: 200px;
+
+}
+
+
+.my_cart_title{
+  text-align: center;
+  color:#0057a2
+}
+
+.my_cart_name{
+  text-align: right;
+  color:#0057a2
+}
+.my_cart_count{
+  margin-top: 0 px;
+  text-align: right;
+  color:#727272
+}
+
+
+.logo{
+  width: 350px;
+  position: initial;
+}
+
+.aquarium_params{
+  color: #727272;
+  margin-top: 37px;
+}
+
+
+.fish_card{
+  /* width: 100%; */
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 18px; 
+}
+
+/* .add_rem_fish_btn{
+  text-align: center;
+  padding: 18px; 
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */
+
+
+.fish_calculator{
+  background-image: url("http://www.uploads.co.il/uploads/images/723613296.png");
+  background-size: auto;
+  /* opacity: 0.5; */
+  padding: 7px;
+  margin: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+
+.fish_name{
+padding-bottom: 5px;
+}
+
+.btn-primary {
+--bs-btn-bg: #4daace;
+}
+
+.rightTankSize{
+  text-align: -webkit-right  ;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.mb-3{
+  
+  width: 200px;
+}
+
+
+.Tanksizebox{
+  position: sticky;
+  
+  /* border: 1px solid #88888854; */
+  border-radius: 25px;
+  background-color: #fefefe;
+
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 30px;
+  width: 80%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.water{
+  margin: 30px;
+  position: sticky;
+  height: 300px;
+  top: 4%;
+  left: 20%;
+  right: 20%;
+  bottom: 20%;
+  border: 5px solid #000000;
+  /* background: rgba(65, 193, 251, 0.5); */
+  background: rgb(166,124,45);
+  background: linear-gradient(0deg, rgba(166,124,45,1) 0%, rgba(199,240,255,1) 10%, rgba(108,198,242,1) 46%, rgba(45,175,237,1) 71%, rgba(22,147,246,1) 89%, rgba(0,112,255,1) 100%, rgba(9,115,121,1) 100%);
+}
+
+.try{
+ color: blueviolet;
+}
+
+img.fish{
+ left: 0%;
+
+ position: absolute; 
+width: 10%;
+animation: animateFish 15s linear infinite;  
+
+}
+
+img.nemo{
+ left: 0%;
+ position: absolute; 
+  top: 70%;
+ width: 10%;
+ animation: animateFish 10s linear infinite;  
+}
+
+
+img.dora{
+ left: 0%;
+ position: absolute; 
+ top: 28%;
+ width: 10%;
+ animation: animateFish 20s linear infinite;  
+}
+
+
+@keyframes animateFish{
+ 0%{
+     transform: translate(0,0) rotateY(180deg);
+ }
+ 50%{
+     transform: translate(900%,0) rotateY(180deg);
+ }
+ 51%{
+     transform: translate(900%,0) rotateY(0deg);
+ }
+ 100%{
+     transform: translate(0,0) rotateY(0deg);
+ }
+
+}
