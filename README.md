@@ -13,7 +13,7 @@ Screenshot & Demo Video
 
  <p align="center">
  
-  <img src="https://github.com/mor0981/FixIt/blob/master/logo.png" width="100" title="hover text">
+  <img src="http://www.uploads.co.il/uploads/images/375422533.png">
   
 </p>
 
@@ -22,7 +22,8 @@ Screenshot & Demo Video
   <img src="http://www.uploads.co.il/uploads/images/248177657.jpg">
   
 </p>
-
+<!-- 
 To see a demo video, click [here].
 
 [here]: https://drive.google.com/file/d/1KEn44dJsjGI1PSjypNj1FnU03Lo0LyLA/view?usp=sharing
+ -->
