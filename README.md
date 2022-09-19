@@ -1,15 +1,13 @@
 # my_tank
 
-FixIt app for searching service providers.
-In the app you can see the reviews of the service providers that the customers gave.
-Anyone who has certain abilities can sign up and give the service they know.
+My Tank help you to choose the Right Fish for your Aquarium
 
-- The app was developed on the React Native platform
-- Database: Firebase
+- React & NodeJS
+- Database: mongoDB
 
-
+<!-- 
 Screenshot & Demo Video
------------------------
+----------------------- -->
 
  <p align="center">
  
