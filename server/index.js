@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://tomer0017:tomer00147@fish.np4pe.mongodb.net/main_fish?retryWrites=true&w=majority");
+
   
   
 
