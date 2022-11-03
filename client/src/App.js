@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { usePopup } from 'react-hook-popup';
 import { PopupProvider } from 'react-hook-popup';
 import Popupbox from './Popupbox';
-import Modal from 'react-bootstrap/Modal';
+
 import TankSize from './TankSize';
 import React,{ useEffect,useState} from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -18,14 +18,19 @@ function App() {
   const[myFish,setMyFish]=useState([]);
   const[myFishType,setMyFishType]=useState(['malawi','american','noy','lobster','livealone'])
   const [fishDictionary, setFishDictionary] = useState([]);
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [showPopup, hidePopup] = usePopup('popup', ({ message, handleClose }) => (
+    <div className="modal">
+        {message}
+        <button onClick={handleClose}>
+            Close this modal
+        </button>
+    </div>
+));
+ 
 
 
   useEffect(() => {
-    axios.get("/restart", {
+    axios.get("/api2", {
       params: {
         minsize: tankSize,
         neighbors:myFishType,
@@ -40,7 +45,7 @@ function App() {
   
 
   useEffect(() => {
-    axios.get("/filter", {
+    axios.get("/api", {
       params: {
         minsize: tankSize,
         neighbors:myFishType,
@@ -113,7 +118,7 @@ function removeFish(fishName){
       </Row>
         
     </div>
-     <div></div>
+     
       <Container>
        
       <div >
@@ -166,39 +171,7 @@ function removeFish(fishName){
         
       </div>
     </Container>
- 
-      <Modal
-        show={show}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-       
-      >
-        <Modal.Header 
-         style={{display: "block"}}
-        >
-          <Modal.Title >
-            <h2 className='my_cart_title'>הדגים שלי</h2> </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {fishDictionary.map((item,index)=>
-          <div>
-            <h4 className='my_cart_name'>{item['name']}</h4>
-            <h5 className='my_cart_count'>{"כמות"+": "+item['count']}</h5>
-            </div>
-          
-          
-          
-          )}
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            סגור
-          </Button>
-          {/* <Button variant="primary">Understood</Button> */}
-        </Modal.Footer>
-      </Modal>
-    <img onClick={handleShow} className='sticky'  src="http://www.uploads.co.il/uploads/images/706513459.png" /> 
+    <img onClick={showFishList} className='sticky'  src="http://www.uploads.co.il/uploads/images/706513459.png" /> 
 {/*     
      <button onClick={() => showPopup('I am a modal!')}>
     Show the modal

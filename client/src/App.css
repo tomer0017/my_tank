@@ -1,18 +1,13 @@
-
-
 .App {
-  min-height: 1000px;
   background-image: url('https://i.pinimg.com/originals/89/dd/d1/89ddd1736843155c89bac176fdb5dcdc.jpg');
   background-color: #ffffff;
-  
   /* padding: 30px; */
   text-align: center  ;
 }
 
 .top_header{
   background-color: #ffffff;
-  border-bottom: 10px solid #3499db;
-  height: 160px;
+  height: 165px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -22,23 +17,8 @@
   bottom: 0;
   right:0;
   height: 200px;
-
-}
-
-
-.my_cart_title{
-  text-align: center;
-  color:#0057a2
-}
-
-.my_cart_name{
-  text-align: right;
-  color:#0057a2
-}
-.my_cart_count{
-  margin-top: 0 px;
-  text-align: right;
-  color:#727272
+  /* width: 100vw; */
+  /* background: yellow; */
 }
 
 
@@ -86,6 +66,7 @@
 .fish_name{
 padding-bottom: 5px;
 }
+
 
 .btn-primary {
 --bs-btn-bg: #4daace;
