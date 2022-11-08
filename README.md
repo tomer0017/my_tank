@@ -17,7 +17,7 @@ Screenshot & Demo Video
 
  <p align="center" style="display: flex;">
  
-  <img src="http://www.uploads.co.il/uploads/images/763546920.jpg">
+  <img src="http://www.uploads.co.il/uploads/images/729380060.jpg">
   
 </p>
 
