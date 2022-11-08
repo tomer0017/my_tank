@@ -11,7 +11,7 @@ Screenshot & Demo Video
 
  <p align="center">
  
-  <img src="http://www.uploads.co.il/uploads/images/141144313.png" style="max-width: 70%;">
+  <img style="max-width: 100%;" src="http://www.uploads.co.il/uploads/images/141144313.png" >
   
 </p>
 
